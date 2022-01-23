@@ -81,7 +81,7 @@ body {
 }
 
 .header-logo {
-  /* margin-right: 93px; */
+  margin-right: 93px;
   color: var(--primary-text-color);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -106,7 +106,7 @@ body {
 
 .header-nav {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -115,7 +115,7 @@ body {
   align-items: center;
 }
 
-.header-nav .item + .item {
+.header-site-nav .item + .item {
   margin-left: 50px;
 }
 
@@ -131,6 +131,12 @@ body {
 .header-auth-nav {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  margin-left: 305px;
+}
+
+.header-auth-nav .item + .item {
+  margin-left: 30px;
 }
 
 .header-auth-nav a {
@@ -242,7 +248,7 @@ body {
 /* ----------------FEATURES-------------------------- */
 
 .features {
-  background-color: var(--background-features-work-color);
+  /* background-color: var(--background-features-work-color); */
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -315,7 +321,7 @@ body {
 /* ----------------WORK-------------------------- */
 
 .work {
-  background-color: var(--background-features-work-color);
+  /* background-color: var(--background-features-work-color); */
   padding-bottom: 94px;
 }
 
@@ -344,10 +350,6 @@ body {
 
 .tiam-card {
   width: 270px;
-  height: 428px;
-  left: 215px;
-  top: 1785px;
-
   background: #ffffff;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -433,7 +435,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--title-text-color);
+  fill: rgba(175, 177, 184, 1);
 }
 
 .tiam-social-link:hover,
@@ -590,6 +592,10 @@ body {
   background-color: var(--accent-color);
 }
 
+.invite-social-list .item + .item {
+  margin-left: 10px;
+}
+
 /* ---------------- PORTFOLIO-------------------------- */
 
 .portfolio {
@@ -683,14 +689,6 @@ body {
 }
 
 .portfolio-card:hover {
-  /* position: absolute; */
-  width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 262px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
